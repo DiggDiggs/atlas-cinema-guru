@@ -5,11 +5,9 @@ import WelcomeMessage from "./WelcomeMessage";
 
 export default async function Header() {
   return (
-    <div
-      className={"bg-teal text-navy flex flex-row justify-between align-center"}
-    >
+    <div className={'bg-teal text-navy flex flex-row justify-between align-center'}>
       <Logo />
-      <div className={"flex flex-row p-4 items-center"}>
+      <div className={'flex flex-row p-4 items-center'}>
         <WelcomeMessage />
         <LogOutButton />
       </div>
