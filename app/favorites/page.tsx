@@ -1,11 +1,11 @@
-import React from "react";
+import FavoritesMain from "@/components/FavoritesMain";
+import MovieCards from "@/components/MovieCards";
 
-const FavoritesPage: React.FC = () => {
+export default async function Page() {
   return (
-    <div className="flex items-center justify-center h-screen">
-      <h1 className="text-2xl font-bold">Welcome to the Favorites Page</h1>
+    <div className="flex flex-col w-screen h-screen">
+      <FavoritesMain />
+      <MovieCards />
     </div>
   );
-};
-
-export default FavoritesPage;
+}

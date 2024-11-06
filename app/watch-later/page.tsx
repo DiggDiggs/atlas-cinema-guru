@@ -1,11 +1,11 @@
-import React from "react";
+import MovieCards from "@/components/MovieCards";
+import WatchLaterMain from "@/components/WatchLaterMain";
 
-const Page: React.FC = () => {
+export default async function Page() {
   return (
-    <div className="flex items-center justify-center h-screen">
-      <h1 className="text-2xl font-bold">Welcome to the Watch Later Page</h1>
+    <div className="flex flex-col w-screen h-screen">
+      <WatchLaterMain />
+      <MovieCards />
     </div>
   );
-};
-
-export default Page;
+}
